@@ -103,8 +103,9 @@ header {
 #botaoFecharMenuLateral {
   position: relative;
   top: 0;
-  height: 5%;
-  width: 15%;
+  height: 5vh;
+  width: 15vw;
+  -webkit-box-shadow: inset 0px 0px 11px -3px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0px 0px 11px -3px rgba(0, 0, 0, 0.1);
   background-color: red;
 }
