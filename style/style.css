@@ -101,7 +101,8 @@ header {
 }
 
 #botaoFecharMenuLateral {
-  position: relative;
+  position: absolute;
+  z-index: 1;
   top: 0;
   height: 5vh;
   width: 15vw;
