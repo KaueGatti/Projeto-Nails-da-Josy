@@ -56,63 +56,6 @@ header {
   font-style: normal;
 }
 
-/* Botão do menu */
-#navBotaoMenu {
-  display: flex;
-  align-items: center;
-}
-
-#botaoMenu {
-  height: 40px;
-  width: 40px;
-  background-color: #ccc;
-  border: none;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-
-/* Menu lateral */
-#navMenuLateral {
-  display: none; /* Ocultado por padrão */
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 100vh;
-  width: 75vw;
-  background-color: rgb(197, 170, 223);
-  z-index: 1000;
-  flex-direction: column;
-}
-
-#menuLateral {
-  height: 100%;
-  width: 100%;
-  padding: 10px;
-}
-
-#botaoFecharMenuLateral {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  height: 40px;
-  width: 40px;
-  background-color: #ccc;
-  border: none;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-
-#imgFecharMenuLateral {
-  height: 100%;
-  width: 100%;
-}
-
 /* Media Queries para dispositivos móveis */
 @media (max-width: 768px) {
   header {
@@ -120,24 +63,15 @@ header {
     height: auto;
     padding: 10px;
   }
+}
 
-  #logoNailsJosy {
-    height: 10vh;
-  }
+#logoNailsJosy {
+  height: 10vh;
+}
 
-  #instagramLink {
-    height: 30px;
-    width: 30px;
-  }
-
-  #botaoMenu {
-    height: 35px;
-    width: 35px;
-  }
-
-  #navMenuLateral {
-    width: 100%; /* O menu cobre toda a largura */
-  }
+#instagramLink {
+  height: 30px;
+  width: 30px;
 }
 
 @media (max-width: 480px) {
@@ -148,27 +82,13 @@ header {
     height: auto;
     padding: 5px;
   }
+}
 
-  #logoNailsJosy {
-    height: 8vh;
-  }
+#logoNailsJosy {
+  height: 8vh;
+}
 
-  #instagramLink {
-    height: 25px;
-    width: 25px;
-  }
-
-  #botaoMenu {
-    height: 30px;
-    width: 30px;
-  }
-
-  #navMenuLateral {
-    width: 100%;
-  }
-
-  #botaoFecharMenuLateral {
-    height: 30px;
-    width: 30px;
-  }
+#instagramLink {
+  height: 25px;
+  width: 25px;
 }
