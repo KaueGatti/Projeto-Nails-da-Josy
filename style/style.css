@@ -1,114 +1,166 @@
-/* Retirando bordas externas e internas, e definindo o padrão "border-box" */
-
+/* Resetando bordas e definindo box-sizing */
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-/* Definindo o body como 100% da viwer port */
-
+/* Configurações gerais */
 body {
   height: 100vh;
   width: 100vw;
   background-color: rgb(235, 235, 235);
+  font-family: Arial, sans-serif;
 }
 
-/* Cabeçalho, logo, botão menu */
-
+/* Cabeçalho */
 header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  width: 100vw;
+  justify-content: space-between;
+  width: 100%;
   height: 15vh;
-  border: 1px black solid;
+  border-bottom: 1px solid black;
+  padding: 0 10px;
 }
 
-/* Container para as redes sociais */
-
+/* Redes sociais */
 #navRedes {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   align-items: center;
-  width: 33%;
-  height: 100%;
+  width: auto;
 }
-
-/* Configurando tamanho do link */
 
 #instagramLink {
-  height: 25%;
-  width: 15%;
+  display: flex;
+  height: 40px;
+  width: 40px;
 }
-
-/* Imagem da logo do Instagram */
 
 #instagramImg {
   border: 1px solid greenyellow;
   height: 100%;
   width: 100%;
+  border-radius: 50%;
 }
 
-/* Imagem do Logo */
-
+/* Logo */
 #logoNailsJosy {
-  width: 33%;
-  height: 100%;
+  width: auto;
+  height: 12vh;
 }
 
-/* Container  para o botão do menu */
-
+/* Botão do menu */
 #navBotaoMenu {
   display: flex;
-  flex-direction: row;
-  width: 33%;
-  height: 100%;
-  justify-content: center;
   align-items: center;
 }
-
-/* Botão de menu */
 
 #botaoMenu {
-  height: 50%;
-  width: 33%;
+  height: 40px;
+  width: 40px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 5px;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-left: 50px;
+  cursor: pointer;
 }
 
-/* Configurando o menu para posição esquerda e para sobresair os outros elementos quando aberto */
-
+/* Menu lateral */
 #navMenuLateral {
-  display: none;
-  position: absolute;
-  bottom: 0;
+  display: none; /* Ocultado por padrão */
+  position: fixed;
+  top: 0;
   right: 0;
-  z-index: 1;
   height: 100vh;
   width: 75vw;
+  background-color: rgb(197, 170, 223);
+  z-index: 1000;
+  flex-direction: column;
 }
 
 #menuLateral {
   height: 100%;
-  width: 85%;
-  background-color: rgb(235, 159, 221);
+  width: 100%;
+  padding: 10px;
 }
 
 #botaoFecharMenuLateral {
-  position: relative;
-  top: 0;
-  height: 5%;
-  width: 15%;
-  box-shadow: inset 0px 0px 11px -3px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 40px;
+  width: 40px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 #imgFecharMenuLateral {
   height: 100%;
   width: 100%;
+}
+
+/* Media Queries para dispositivos móveis */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  #logoNailsJosy {
+    height: 10vh;
+  }
+
+  #instagramLink {
+    height: 30px;
+    width: 30px;
+  }
+
+  #botaoMenu {
+    height: 35px;
+    width: 35px;
+  }
+
+  #navMenuLateral {
+    width: 100%; /* O menu cobre toda a largura */
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    height: auto;
+    padding: 5px;
+  }
+
+  #logoNailsJosy {
+    height: 8vh;
+  }
+
+  #instagramLink {
+    height: 25px;
+    width: 25px;
+  }
+
+  #botaoMenu {
+    height: 30px;
+    width: 30px;
+  }
+
+  #navMenuLateral {
+    width: 100%;
+  }
+
+  #botaoFecharMenuLateral {
+    height: 30px;
+    width: 30px;
+  }
 }
