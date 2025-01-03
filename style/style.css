@@ -1,0 +1,114 @@
+/* Retirando bordas externas e internas, e definindo o padrão "border-box" */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* Definindo o body como 100% da viwer port */
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(235, 235, 235);
+}
+
+/* Cabeçalho, logo, botão menu */
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 15vh;
+  border: 1px black solid;
+}
+
+/* Container para as redes sociais */
+
+#navRedes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  height: 100%;
+}
+
+/* Configurando tamanho do link */
+
+#instagramLink {
+  height: 25%;
+  width: 15%;
+}
+
+/* Imagem da logo do Instagram */
+
+#instagramImg {
+  border: 1px solid greenyellow;
+  height: 100%;
+  width: 100%;
+}
+
+/* Imagem do Logo */
+
+#logoNailsJosy {
+  width: 33%;
+  height: 100%;
+}
+
+/* Container  para o botão do menu */
+
+#navBotaoMenu {
+  display: flex;
+  flex-direction: row;
+  width: 33%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Botão de menu */
+
+#botaoMenu {
+  height: 50%;
+  width: 33%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50px;
+}
+
+/* Configurando o menu para posição esquerda e para sobresair os outros elementos quando aberto */
+
+#navMenuLateral {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  height: 100vh;
+  width: 75vw;
+}
+
+#menuLateral {
+  height: 100%;
+  width: 85%;
+  background-color: rgb(235, 159, 221);
+}
+
+#botaoFecharMenuLateral {
+  position: relative;
+  top: 0;
+  height: 5%;
+  width: 15%;
+  box-shadow: inset 0px 0px 11px -3px rgba(0, 0, 0, 0.1);
+}
+
+#imgFecharMenuLateral {
+  height: 100%;
+  width: 100%;
+}
