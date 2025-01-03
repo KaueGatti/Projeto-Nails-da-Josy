@@ -137,6 +137,9 @@ header {
 
 @media (max-width: 480px) {
   header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     height: auto;
     padding: 5px;
   }
