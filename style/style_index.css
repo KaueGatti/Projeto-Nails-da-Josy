@@ -125,9 +125,9 @@ main {
 /* Media Queries */
 @media (max-width: 480px) {
   .navQuemSou {
-    font-size: 10px;
+    font-size: 15px;
   }
   .navTratamentos {
-    font-size: 10px;
+    font-size: 15px;
   }
 }
