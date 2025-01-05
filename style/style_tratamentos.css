@@ -122,3 +122,14 @@ main {
   min-height: 15%;
   margin-top: 6px;
 }
+
+/* Media Queries */
+@media (max-width: 480px) {
+  .navQuemSou {
+    font-size: 15px;
+  }
+  .navTratamentos {
+    font-size: 15px;
+    margin-right: 15px;
+  }
+}
