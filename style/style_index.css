@@ -75,7 +75,7 @@ header {
 }
 
 /* Main da página, todos os serviços */
-main {
+.mainServicos {
   display: flex;
   flex-direction: column;
   align-items: center;
