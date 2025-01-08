@@ -93,7 +93,9 @@ header {
   width: 90%;
   margin-top: 6rem;
   border: 1px black solid;
-  padding: 1rem;
+  padding: 1rem 0 1rem 0;
+  border-radius: 0.5rem;
+  /*background-color: #ffcad4;*/
 }
 
 /* Section demais serviços */
@@ -105,7 +107,8 @@ header {
   margin-top: 20px;
   width: 90%;
   border: 1px black solid;
-  padding: 1rem;
+  padding: 1rem 0 1rem 0;
+  border-radius: 0.5rem;
 }
 
 /* Titulo, descrição e informações do Serviço */
@@ -116,37 +119,59 @@ header {
 
 .descServico {
   margin-bottom: 1rem;
+  padding: 0 1rem 0 1rem;
 }
 
 .infoServico {
-  padding-left: 0.625rem;
+  padding: 0 2rem 0 2rem;
   width: 100%;
   /*border: 1px black solid;*/
 }
 
 /* Galeria Serviços */
 
+.galeriaContainer {
+  display: flex;
+  width: 100%;
+}
+
 .galeriaImagens {
   display: flex;
   flex-direction: row;
   white-space: nowrap;
-  margin: 1rem 0 0.5rem 0;
-  height: 12rem;
   width: 80%;
-  border: 1px red solid;
   overflow: hidden;
 }
 
 img {
-  width: 10rem;
+  width: 7.5rem;
   height: 100%;
 }
 
-/* Botão Agendar Horário Section 1 */
+.galeriaNavEsquerda {
+  width: 10%;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0.6;
+  font-weight: 500;
+  font-size: 1.5rem;
+  border: none;
+}
+
+.galeriaNavDireita {
+  width: 10%;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0.6;
+  font-weight: 500;
+  font-size: 1.5rem;
+  border: none;
+}
+
+/* Botão Agendar Horário Serviço */
 .botaoAgendarHorario {
   width: 75%;
-  min-height: 15%;
-  margin-top: 6px;
+  height: 3rem;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
 }
 
 /* Media Queries */
