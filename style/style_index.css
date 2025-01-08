@@ -76,6 +76,7 @@ header {
 
 /* Main da página, todos os serviços */
 .mainServicos {
+  font-family: Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -105,6 +106,22 @@ header {
   width: 90%;
   border: 1px black solid;
   padding: 1rem;
+}
+
+/* Titulo, descrição e informações do Serviço */
+
+.tituloServico {
+  margin-bottom: 1rem;
+}
+
+.descServico {
+  margin-bottom: 1rem;
+}
+
+.infoServico {
+  padding-left: 0.625rem;
+  width: 100%;
+  /*border: 1px black solid;*/
 }
 
 /* Galeria Serviços */
