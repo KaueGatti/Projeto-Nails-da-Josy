@@ -89,10 +89,9 @@ header {
   flex-direction: column;
   align-items: center;
   margin-top: 20px;
-  height: 250px;
-  width: 70%;
+  width: 90%;
   margin-top: 7rem;
-  /*border: 1px black solid;*/
+  border: 1px black solid;
 }
 
 /* Section demais serviços */
@@ -102,17 +101,26 @@ header {
   flex-direction: column;
   align-items: center;
   margin-top: 20px;
-  height: 250px;
-  width: 70%;
-  /*border: 1px black solid;*/
+  width: 90%;
+  border: 1px black solid;
 }
 
-/* Imagem Section 1 */
-.imagens {
-  height: 80%;
+/* Galeria Serviços */
+
+.galeriaImagens {
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+  margin: 1rem 0 0.5rem 0;
+  height: 12rem;
   width: 80%;
-  opacity: 1;
-  /*border: 1px red solid;*/
+  border: 1px red solid;
+  overflow: hidden;
+}
+
+img {
+  width: 10rem;
+  height: 100%;
 }
 
 /* Botão Agendar Horário Section 1 */
