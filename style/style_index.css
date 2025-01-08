@@ -92,6 +92,7 @@ header {
   width: 90%;
   margin-top: 6rem;
   border: 1px black solid;
+  padding: 1rem;
 }
 
 /* Section demais serviços */
@@ -103,6 +104,7 @@ header {
   margin-top: 20px;
   width: 90%;
   border: 1px black solid;
+  padding: 1rem;
 }
 
 /* Galeria Serviços */
