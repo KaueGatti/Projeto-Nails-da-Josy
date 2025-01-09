@@ -3,6 +3,7 @@ const bNavDireita = document.getElementById("bNavDireita");
 const galeriaImagens = document.getElementById("galeriaImagens");
 const larguraImg = document.querySelector("img").offsetWidth;
 const larguraImgRem = larguraImg / 16;
+const totalImagens = galeriaImagens.querySelectorAll("img").length;
 let indiceImg = 0;
 let moverImg = 0;
 
@@ -15,11 +16,11 @@ bNavEsquerda.addEventListener("click", () => {
 });
 
 bNavDireita.addEventListener("click", () => {
-  if (indiceImg < 3) {
+  if (indiceImg < totalImagens - 1) {
     ++indiceImg;
   }
   moverImg = indiceImg * larguraImgRem;
-  galeriaImagens.style.transform = `translateX(${moverImg}rem)`;
+  galeriaImagens.style.transform = `translateX(-${moverImg}rem)`;
 });
 
 console.log(moverImg);
