@@ -1,6 +1,6 @@
 const bNavEsquerda = document.getElementById("bNavEsquerda");
 const bNavDireita = document.getElementById("bNavDireita");
-const galeriaImagens = document.getElementById("galeriaImagens");
+const galeriaImagens = document.getElementById("galeriaImagensServico1");
 const larguraImg = document.querySelector("img").offsetWidth;
 const larguraImgRem = larguraImg / 16;
 const totalImagens = galeriaImagens.querySelectorAll("img").length;
