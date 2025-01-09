@@ -22,5 +22,3 @@ bNavDireita.addEventListener("click", () => {
   moverImg = indiceImg * larguraImgRem;
   galeriaImagens.style.transform = `translateX(-${moverImg}rem)`;
 });
-
-console.log(moverImg);
