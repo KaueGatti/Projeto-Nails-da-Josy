@@ -143,7 +143,7 @@ header {
   flex-direction: row;
   white-space: nowrap;
   width: 80%;
-  transform: translateX(0);
+  transform: translateX();
 }
 
 img {
@@ -151,7 +151,6 @@ img {
   height: 15rem;
   flex-shrink: 0;
   transition: 0.5s ease-out;
-  transform: translateX(0);
 }
 
 .galeriaNavEsquerda {
