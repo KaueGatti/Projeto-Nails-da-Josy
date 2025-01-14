@@ -100,12 +100,8 @@ header {
 
 /* Margin primeiro e ultimo Serviço */
 
-section:first-child {
+.servico:first-child {
   margin-top: 6rem;
-}
-
-section:last-child {
-  margin-bottom: 3rem;
 }
 
 /* Titulo, descrição e informações do Serviço */
