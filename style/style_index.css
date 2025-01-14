@@ -85,13 +85,7 @@ header {
   width: 100%;
 }
 
-/* Section serviço 1 */
-
-#servico1 {
-  margin-top: 6rem;
-}
-
-/* Section demais serviços */
+/* Section serviços */
 
 .servico {
   display: flex;
@@ -102,6 +96,16 @@ header {
   border: 1px black solid;
   padding: 1rem 0 1rem 0;
   border-radius: 0.5rem;
+}
+
+/* Margin primeiro e ultimo Serviço */ 
+
+main:first-child {
+  margin-top: 6rem;
+}
+
+main:last-child  {
+  margin-bottom: 2rem;
 }
 
 /* Titulo, descrição e informações do Serviço */
