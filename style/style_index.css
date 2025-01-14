@@ -98,14 +98,14 @@ header {
   border-radius: 0.5rem;
 }
 
-/* Margin primeiro e ultimo Serviço */ 
+/* Margin primeiro e ultimo Serviço */
 
-main:first-child {
+section:first-child {
   margin-top: 6rem;
 }
 
-main:last-child  {
-  margin-bottom: 2rem;
+section:last-child {
+  margin-bottom: 3rem;
 }
 
 /* Titulo, descrição e informações do Serviço */
