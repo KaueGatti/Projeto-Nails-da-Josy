@@ -97,7 +97,7 @@ header {
   padding: 1rem 0 1rem 0;
   border-radius: 0.5rem;
   box-shadow: 8px 5px 15px -3px rgba(0, 0, 0, 0.1),
-    -5px 0px 15px 4px rgba(250, 232, 248, 1);
+    -5px 0px 15px 4px rgb(208, 205, 205);
 }
 
 /* Margin primeiro e ultimo Serviço */
