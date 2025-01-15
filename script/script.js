@@ -1,10 +1,11 @@
 const larguraImg = document.getElementsByTagName("img")[0].offsetWidth;
 const larguraImgRem = larguraImg / 16;
 const indiceImgs = {
-    "indice_galeriaImagensServico1": 0,
-    "indice_galeriaImagensServico2": 0,
-    "indice_galeriaImagensServico3": 0,
-    "indice_galeriaImagensServico4": 0,
+    indice_galeriaImagensServico1: 0,
+    indice_galeriaImagensServico2: 0,
+    indice_galeriaImagensServico3: 0,
+    indice_galeriaImagensServico4: 0,
+    indice_galeriaImagensProduto1: 0,
 }
 
 function moverEsquerda(id) {

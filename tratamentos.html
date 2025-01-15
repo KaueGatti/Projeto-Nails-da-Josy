@@ -16,23 +16,56 @@
         <a class="linkTratamentos" href="tratamentos.html">Tratamentos</a>
       </nav>
     </header>
-    <main>
-      <section class="servico1">
-        <img
-          class="imagens"
-          src="img/IMG-20250104-WA0025.jpg"
-          alt="Postiça Realista"
-        />
-        <button class="botaoAgendarHorario">Agendar Horário</button>
+    <main class="mainServicos">
+      <section class="servico" id="servico1">
+        <h1 class="tituloServico">Tratamento dos Pés</h1>
+        <p class="descServico">
+          Tratamento
+        </p>
+        <ul class="infoServico">
+          <li>Tempo de duração: <strong>1:30h</strong></li>
+          <li>Valor: <strong>R$80,00</strong></li>
+        </ul>
+        <div class="galeriaContainer">
+          <button class="buttonMoverEsquerda" id="moverEsquerdaServico1" onclick="moverEsquerda(id)">
+            <
+          </button>
+          <div id="galeriaImagensServico1" class="galeriaImagens">
+            <img class="imgsServico1" src="img/EsmaltacaoEmGel.jpeg" alt="" />
+          </div>
+          <button class="buttonMoverDireita" id="moverDireitaServico1" onclick="moverDireita(id)">></button>
+        </div>
+        <button
+          onclick="window.open('https://wa.me/5519993376398?text=Olá,%20gostaria%20de%20agendar%20um%20horário%20para%20uma%20Esmaltação%20em%20Gel!', '_blank')"
+          class="botaoAgendarHorario"
+        >
+          Agendar Horário
+        </button>
       </section>
-      <section class="produto">
-        <img
-          class="imagens"
-          src="img/IMG-20250104-WA0039.jpg"
-          alt="Postiça Realista"
-        />
+      <section class="produto" id="produto1">
+        <h1 class="tituloProduto">Base Bomba</h1>
+        <p class="descProduto">
+          Base para <strong>fortalecimento</strong> das unhas
+        </p>
+        <ul class="infoProduto">
+          <li>Valor: <strong>R$30,00</strong></li>
+        </ul>
+        <div class="galeriaContainer">
+          <button class="buttonMoverEsquerda" id="moverEsquerdaProduto1" onclick="moverEsquerda(id)">
+            <
+          </button>
+          <div id="galeriaImagensProduto1" class="galeriaImagens">
+            <img class="imgsProduto1" src="img/BaseBomba.jpeg" alt="" />
+            <img class="imgsProduto1" src="img/BaseBombaUn.jpeg" alt="" />
+            <img class="imgsProduto1" src="img/BaseBombaUn1.jpeg" alt="" />
+          </div>
+          <button class="buttonMoverDireita" id="moverDireitaProduto1" onclick="moverDireita(id)">></button>
+        </div>
         <button class="botaoCompreJa">Compre Já</button>
       </section>
+      &nbsp;
+      <script src="script/script.js"></script>
     </main>
   </body>
-</html>
+  </html>
+  

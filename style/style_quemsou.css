@@ -86,15 +86,17 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 35%;
   width: 70%;
   margin-top: 1.5rem;
 }
 
 /* Imagem Josy */
 .imagemJosy {
-  height: 80%;
-  width: 80%;
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 5px;
 }
 
 .sectionTexto {
@@ -104,8 +106,9 @@ main {
 }
 
 .texto {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 300;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Media Queries */
