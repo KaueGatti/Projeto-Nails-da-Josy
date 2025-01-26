@@ -115,11 +115,14 @@ header {
 .descServico {
   margin-bottom: 1rem;
   padding: 0 1rem 0 1rem;
+  text-align: center;
 }
 
 .infoServico {
   padding: 0 2rem 0 2rem;
   width: 100%;
+  font-size: 0.91rem;
+  line-height: 1.5;
   /*border: 1px black solid;*/
 }
 
