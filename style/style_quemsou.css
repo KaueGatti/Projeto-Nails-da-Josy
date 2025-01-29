@@ -96,7 +96,8 @@ main {
   height: auto;
   flex-shrink: 0;
   object-fit: cover;
-  border-radius: 5px;
+  border-radius: 30%; 
+  box-shadow: 13px -9px 15px -3px rgba(0,0,0,0.1),-12px 8px 15px -3px rgba(0,0,0,0.1);
 }
 
 .sectionTexto {
