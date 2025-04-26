@@ -199,7 +199,7 @@ ul {
     align-items: center;
     justify-content: center;
     width: 30%;
-    margin-top: 1.5rem;
+    margin-top: 0px;
   }
   
   .imagemJosy {
@@ -208,7 +208,7 @@ ul {
   }
   
   .sectionTexto {
-    margin-top: 3rem;
+    margin-top: 0rem;
     height: 35%;
     width: 50%;
   }
