@@ -1,19 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playwrite+BE+VLG+Guides&display=swap");
 
-/* Configurações gerais */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body */
 body {
   height: 100vh;
   width: 100vw;
 }
 
-/* Cabeçalho */
 header {
   display: flex;
   justify-content: space-evenly;
@@ -25,7 +22,6 @@ header {
   background-color: rgba(245, 232, 248);
 }
 
-/* Nav Quem sou? */
 .navQuemSou {
   display: flex;
   align-items: center;
@@ -37,13 +33,10 @@ header {
   cursor: pointer;
 }
 
-/* Link Tratamentos */
-
 .linkQuemsou {
   color: black;
 }
 
-/* Logo Nails da Josy */
 .logoNailsJosy {
   display: flex;
   justify-content: center;
@@ -58,7 +51,6 @@ header {
   text-decoration: none;
 }
 
-/* Nav Tratamentos */
 .navTratamentos {
   display: flex;
   justify-content: center;
@@ -70,12 +62,10 @@ header {
   cursor: pointer;
 }
 
-/* Link Tratamentos */
 .linkTratamentos {
   color: black;
 }
 
-/* Main da página, todos os serviços */
 .mainServicos {
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
@@ -84,8 +74,6 @@ header {
   height: 90%;
   width: 100%;
 }
-
-/* Section serviços */
 
 .servico {
   display: flex;
@@ -100,13 +88,9 @@ header {
     -5px 0px 15px 4px rgb(234, 230, 230);
 }
 
-/* Margin primeiro e ultimo Serviço */
-
 .servico:first-child {
   margin-top: 6rem;
 }
-
-/* Titulo, descrição e informações do Serviço */
 
 .tituloServico {
   margin-bottom: 1rem;
@@ -126,8 +110,6 @@ header {
   line-height: 1.5;
   /*border: 1px black solid;*/
 }
-
-/* Galeria Serviços */
 
 .galeriaContainer {
   overflow: hidden;
@@ -172,7 +154,6 @@ img {
   z-index: 1;
 }
 
-/* Botão Agendar Horário Serviço */
 .botaoAgendarHorario {
   font-size: 1rem;
   background-color: rgba(245, 232, 248);
@@ -183,7 +164,6 @@ img {
   border: 1px solid black;
 }
 
-/* Media Queries */
 @media (max-width: 480px) {
   .navQuemSou {
     font-size: 15px;
@@ -191,5 +171,192 @@ img {
   .navTratamentos {
     font-size: 15px;
     margin-right: 15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body */
+  body {
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  /* Cabeçalho */
+  header {
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 10%;
+    /*border-bottom: 1px black solid;*/
+    background-color: rgba(245, 232, 248);
+  }
+  
+  /* Nav Quem sou? */
+  .navQuemSou {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 25%;
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  /* Link Tratamentos */
+  
+  .linkQuemsou {
+    color: black;
+  }
+  
+  /* Logo Nails da Josy */
+  .logoNailsJosy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    font-family: "Great Vibes", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    font-size: 2rem;
+    text-decoration: none;
+  }
+  
+  /* Nav Tratamentos */
+  .navTratamentos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 25%;
+    font-size: 20px;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  
+  /* Link Tratamentos */
+  .linkTratamentos {
+    color: black;
+  }
+  
+  /* Main da página, todos os serviços */
+  .mainServicos {
+    padding-top: 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+  
+  /* Section serviços */
+  
+  .servico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+    width: 30%;
+    height: 40rem;
+    border: 1px black solid;
+    padding: 1rem 0 1rem 0;
+    border-radius: 0.5rem;
+    box-shadow: 8px 5px 15px -3px rgba(0, 0, 0, 0.1),
+      -5px 0px 15px 4px rgb(234, 230, 230);
+  }
+  
+  /* Margin primeiro e ultimo Serviço */
+  
+  .servico:first-child {
+    margin-top: 0px;
+  }
+  
+  /* Titulo, descrição e informações do Serviço */
+  
+  .tituloServico {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .descServico {
+    margin-bottom: 1rem;
+    padding: 0 1rem 0 1rem;
+    text-align: center;
+  }
+  
+  .infoServico {
+    padding: 0 2rem 0 2rem;
+    width: 100%;
+    font-size: 0.91rem;
+    line-height: 1.5;
+    /*border: 1px black solid;*/
+  }
+  
+  /* Galeria Serviços */
+  
+  .galeriaContainer {
+    overflow: hidden;
+    margin-top: 1rem;
+    display: flex;
+    width: 100%;
+  }
+  
+  .galeriaImagens {
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    width: 80%;
+    transform: translateX();
+    transition: 0.5s ease-in-out;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    object-fit: cover;
+  }
+  
+  .buttonMoverEsquerda {
+    width: 10%;
+    background-color: rgba(245, 232, 248);
+    font-weight: 500;
+    font-size: 1.5rem;
+    border: none;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .buttonMoverDireita {
+    width: 10%;
+    background-color: rgba(245, 232, 248);
+    font-weight: 500;
+    font-size: 1.5rem;
+    border: none;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Botão Agendar Horário Serviço */
+  .botaoAgendarHorario {
+    font-size: 1rem;
+    background-color: rgba(245, 232, 248);
+    width: 75%;
+    height: 3rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid black;
   }
 }
